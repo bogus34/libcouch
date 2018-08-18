@@ -16,10 +16,7 @@
   "author": "Alexander Bogdanov <andorn@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "glob": "^7.1.2",
-    "nano": "^7.0.0",
-    "pouchdb-core": "^7.0.0",
-    "pouchdb-mapreduce": "^7.0.0"
+    "glob": "^7.1.2"
   },
   "devDependencies": {
     "@types/glob": "^5.0.35",
