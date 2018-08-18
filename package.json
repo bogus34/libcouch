@@ -5,8 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf lib && tsc -p tsconfig.build.json",
-    "postinstall": "npm run build"
+    "build": "rm -rf lib && tsc -p tsconfig.build.json"
   },
   "keywords": [
     "couchdb",
