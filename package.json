@@ -1,0 +1,32 @@
+{
+  "name": "libcouch",
+  "version": "0.0.1",
+  "description": "Couchdb unified library and tiny model base",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib && tsc -p tsconfig.build.json",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "couchdb",
+    "pouchdb",
+    "nano",
+    "database"
+  ],
+  "author": "Alexander Bogdanov <andorn@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "nano": "^7.0.0",
+    "pouchdb-core": "^7.0.0",
+    "pouchdb-mapreduce": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^5.0.35",
+    "@types/nano": "^6.4.6",
+    "@types/node": "^10.5.8",
+    "@types/pouchdb": "^6.3.2",
+    "typescript": "^3.0.1"
+  }
+}
