@@ -8,8 +8,10 @@ export declare class PouchConnector implements DBConnectorInterface {
     protected cache: {
         [name: string]: PouchDb;
     };
-    protected views: any;
-    constructor(adapter: string, viewsPath: string);
+    protected views: {
+        [name: string]: any;
+    };
+    constructor(adapter: string, viewsPath?: string);
     protected initViews(viewsPath: string): void;
     use(name: string): DBInterface;
 }
