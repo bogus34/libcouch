@@ -23,6 +23,8 @@ export interface DBInterface {
     remove(id: ID, rev: string): Promise<any>;
     view(design: string, view: string, params?: any): Promise<any>;
     bulk(docs: Document[], params?: any): Promise<any>;
+    destroyDb(): Promise<any>;
+    createDb(): Promise<any>;
 }
 export interface DbErrorInterface extends Error {
     status: number;

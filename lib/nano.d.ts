@@ -1,5 +1,6 @@
 import { DBConnectorInterface, DBInterface, ID, Document, NanoConfig } from './interfaces';
 import { ServerScope } from 'nano';
+import * as nano from 'nano';
 export declare class NanoConnector implements DBConnectorInterface {
     private url;
     private connection;
@@ -15,8 +16,10 @@ export declare class NanoDb implements DBInterface {
     get(id: ID, params: any): Promise<Document>;
     getOrNull(id: ID, params: any): Promise<Document | null>;
     list(params?: any): Promise<any>;
-    put(doc: Document): Promise<{}>;
+    put(doc: Document): Promise<nano.DocumentInsertResponse>;
     remove(id: ID, rev: string): Promise<any>;
     view(design: string, view: string, params?: any): Promise<any>;
     bulk(docs: Document[], params?: any): Promise<any>;
+    destroyDb(): Promise<any>;
+    createDb(): Promise<any>;
 }

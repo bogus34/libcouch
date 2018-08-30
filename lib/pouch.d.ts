@@ -28,4 +28,6 @@ export declare class PouchDb implements DBInterface {
     remove(id: ID, rev: string): Promise<PouchDB.Core.Response>;
     view(design: string, view: string, params?: PouchDB.Query.Options<any, any>): Promise<any>;
     bulk(docs: Document[], params?: any): Promise<any>;
+    destroyDb(): Promise<any>;
+    createDb(): Promise<void>;
 }
