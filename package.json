@@ -17,6 +17,8 @@
   "author": "Alexander Bogdanov <andorn@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@types/nano": "^6.4.6",
+    "@types/pouchdb": "^6.3.2",
     "glob": "^7.1.2"
   },
   "devDependencies": {
@@ -24,9 +26,7 @@
     "@types/chai-as-promised": "^7.1.0",
     "@types/glob": "^5.0.35",
     "@types/mocha": "^5.2.5",
-    "@types/nano": "^6.4.6",
     "@types/node": "^10.5.8",
-    "@types/pouchdb": "^6.3.2",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "chai-like": "^1.1.1",
